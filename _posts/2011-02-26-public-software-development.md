@@ -1,7 +1,7 @@
 ---
 layout: default
 title: On Public Software Development
-categories:
+categories: - by Charles Pritchard
 - public domain
 - licensing
 ---

@@ -1,7 +1,7 @@
 ---
 layout: default
 title: W3Canvas Software Projects
-categories:
+categories: - by Charles Pritchard
 - public domain
 - w3canvas
 ---

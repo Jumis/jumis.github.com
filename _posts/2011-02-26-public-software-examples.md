@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Examples of Public Domain Software
-categories:
+categories: - by Charles Pritchard
 - public domain
 - software
 ---
