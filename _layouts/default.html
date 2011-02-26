@@ -1,0 +1,40 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns = "http://www.w3.org/1999/xhtml">
+<head>
+ <title>Blog | Jumis</title>
+ <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+ <meta name="description" content="{$z->description}" />
+ <meta name="keywords" content="{$z->keywords}" />
+ <link rel="shortcut icon" href="http://jumis.com/media/favicon.ico" type="image/x-icon" />
+ <link rel="icon" href="http://jumis.com/media/favicon.png" type="image/x-icon" />
+ <link href="http://jumis.com/inc/Template.css" rel="stylesheet" type="text/css" />
+ <link rel="stylesheet" type="text/css" media="screen, print" href="http://jumis.com/inc/Contact.css" />
+ <script src="http://jumis.com/inc/Global.js" type="text/javascript"></script>
+</head>
+<body>
+<div class="TopBox"><div class="Top">
+<div class="TopLeft">
+<a href="http://jumis.com/" title="Jumis"><img src="http://jumis.com/media/logo.png" width="195" height="52" alt = "Jumis"/></a>
+</div>
+<div class="TopRight">
+<a href="http://jumis.com/software/developer.html" title="Developers"><img src="http://jumis.com/media/top_developer.png" alt="" /></a>
+<a href="http://jumis.com/about/" title="About"><img src="http://jumis.com/media/top_about.png" alt="" /></a>
+</div>
+</div></div>
+<div class="BodyBox">
+<div class="Body">
+<h1>Posts</h1>
+<div id="posts-area">
+{% for post in site.posts limit:5 %}
+<h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
+{{ post.content }}
+<em>Posted on {{ post.date | date_to_long_string }}.</em>
+{% endfor %}
+</div>
+</div>
+</div>
+<div id="T"></div>
+<script type="text/javascript"> var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www."); document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E")); </script>
+<script type="text/javascript"> try { var pageTracker = _gat._getTracker("UA-400768-10"); pageTracker._trackPageview(); } catch(err) {}; </script>
+</body>
+</html>
